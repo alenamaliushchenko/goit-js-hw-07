@@ -7,7 +7,7 @@
 // знайде й виведе в консоль текст заголовка елемента(тегу < h2 >)
 // і кількість елементів у категорії(усіх < li >, вкладених у нього).
 
-const categoriesList = document.getElementById('categories');
+const categoriesList = document.querySelector('#categories');
 const categoriesItems = categoriesList.querySelectorAll('li.item');
 console.log('Number of categories:', categoriesItems.length);
 
