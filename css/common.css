@@ -12,7 +12,34 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+/* task 1 */
+#categories {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: F6F6FE;
+}
+.container h2 {
+  padding-left: 35px;
+}
+.separate-category li {
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #808080;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+/* .item {
+  list-style: none;
+} */
 /* task 2 */
 .gallery {
   display: flex;
