@@ -94,3 +94,19 @@ button[type='submit'] {
 button[type='submit']:hover {
   background-color: #6c8cff;
 }
+
+/* task 5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-color {
+  color: #ffffff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+  width: 148px;
+  height: 40px;
+}
