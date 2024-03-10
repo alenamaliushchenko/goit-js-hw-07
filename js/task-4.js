@@ -19,7 +19,7 @@ function formSubmit(event) {
   const email = form.elements.email.value;
   const password = form.elements.password.value;
   if (email === '' || password === '') {
-    return console.log('All form fields must be filled in');
+    alert('All form fields must be filled in');
   }
 
   console.log(`Email: ${email.value}, Password: ${password.value}`);
