@@ -16,12 +16,19 @@ registerForm.addEventListener('submit', formSubmit);
 function formSubmit(event) {
   event.preventDefault();
   const form = event.target;
-  const email = form.elements.email.value;
-  const password = form.elements.password.value;
-  if (email === '' || password === '') {
-    alert('All form fields must be filled in');
-  }
 
-  console.log(`Email: ${email}, Password: ${password}`);
+  const emailInput = document.querySelector('input[name = "email"]');
+  const passwordInput = document.querySelector('input[name = "password"]');
+  const emailValue = emailInput.value.trim();
+  const passwordValue = passwordInput.value.trim();
+  if (!emailValue || !passwordValue) {
+    alert('All form fields must be filled in');
+    return;
+  }
+  const formData = {
+    email: emailValue,
+    password: passwordValue,
+  };
+  console.log(formData);
   form.reset();
 }
